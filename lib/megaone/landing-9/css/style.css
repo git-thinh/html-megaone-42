@@ -1,0 +1,294 @@
+/* ===================================
+                About
+   =================================== */
+
+/*
+    Theme Name: MegaOne
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page , Multi Parallax Template
+    Tags: one page, multi page, multipurpose, parallax, creative, html5
+
+ */
+
+/* ===================================
+          Table of Contents
+   =================================== */
+
+/*
+01 body
+02 Page Loader
+03 Coming Soon
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body {
+    font-size: 15px;
+    color: #535353;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    direction: ltr;
+    line-height: 1.5;
+}
+
+
+/* ---- PreLoader ---- */
+
+
+.loader {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+.loader-spinner {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    background: transparent;
+    border-top: 4px solid #002E5B;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    -webkit-animation: 1s spin linear infinite;
+    animation: 1s spin linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*counter container*/
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: #6D63FF;
+}
+#particles-js .position-top{
+    position: sticky;
+    z-index: 1;
+}
+#particles-js canvas{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.row-bg{
+    background-color: #fff;
+    color: #26313c;
+    border-radius: 20px;
+    box-shadow: 7px 7px 20px -5px #1f1f1f;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.left-panel img{
+    user-select: none;
+}
+
+.count-down-form{
+    width: 100%;
+    margin-top: 30px;
+}
+.count-down-form form {
+    margin: 0 auto;
+    position: relative;
+}
+
+.count-down-form form .form-placeholder {
+    border-radius: 40px;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 26px;
+    margin-bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    color: inherit;
+    text-align: left;
+}
+
+.count-down-form form .email-placeholder {
+    background: transparent;
+    width: 100%;
+    border: 1px solid rgba(38, 49, 60, 0.75);
+    border-radius: 40px;
+    display: flex;
+}
+
+.form-placeholder::placeholder{
+    color: rgba(38, 49, 60, 0.85);
+}
+
+.count-down-form form .button {
+    transition: all linear 300ms;
+    margin: 5px 5px 5px 2px;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    padding: .8rem 2.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    z-index: 1;
+    border: 1px solid transparent;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.btn-sky{
+    background-color: #6c63ff;
+    border: 1px solid #6c63ff;
+    color: #fff !important;
+}
+.btn-sky:hover{
+    background-color: #5e27ff;
+    border: 1px solid #5e27ff;
+}
+
+
+
+/*  social icons  */
+
+
+/* ----- Social Icons ----- */
+
+ul.social-icons li {
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    font-size: 14px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    display: block;
+    color: #26313c;
+    position: relative;
+    z-index: 1;
+    border: none;
+}
+
+
+ul.social-icons li:last-child a {
+    margin-right: 0;
+}
+
+ul.social-icons li:first-child a {
+    margin-left: 0;
+}
+
+ul.social-icons li a::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    top: -1px;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    border-radius: inherit;
+    z-index: -1;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    transition: 0.2s all;
+}
+
+ul.social-icons li a:hover::before,
+ul.social-icons li a:focus::before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+ul.social-icons li a:hover,
+ul.social-icons li a:focus{
+    color: #fff;
+}
+
+
+/*icon bg bover */
+.facebook:before{
+    background-color: #4267B2 !important;
+}
+.twitter:before{
+    background-color: #1DA1F2 !important;
+}
+.insta:before{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+.linkedin:before{
+    background-color: #0077B5 !important;
+}
+.whatsapp:before{
+    background-color: #09cc16 !important;
+}
+
+
+
+/*media quries*/
+
+
+@media (max-width: 991px) {
+
+    .right-panel{
+        position: absolute;
+        z-index: 1;
+    }
+    .left-panel{
+        opacity: 0.1;
+        text-align: center;
+    }
+    .right-panel{
+        text-align: center;
+    }
+    .left-panel img{
+        max-width: 400px;
+    }
+    .row-bg{
+        padding: 0;
+    }
+}

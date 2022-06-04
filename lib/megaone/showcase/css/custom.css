@@ -1,0 +1,191 @@
+@media (min-width: 767px) {
+    #my_tog{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        max-width: 70px;
+        margin-right: 0 !important;
+        margin-left: auto !important;
+    }
+
+
+    .overlay-detail i{
+        font-size: 36px;
+    }
+
+    .main-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50% !important;
+        transform: translate(-50%,-50%);
+    }
+
+    .client-sec .client-container .client-img-overlay .client-text {
+
+        width: 85% !important;
+    }
+
+
+}
+
+
+/*!* (1920x1080) Full HD Display *!*/
+/*@media  screen and (min-width: 1920px) {*/
+/*    .side-nav-menu .slider-social {*/
+/*        bottom: 125px;*/
+/*    }*/
+
+/*    .rites-res {*/
+/*        position: absolute;*/
+/*        bottom: 10px;*/
+/*    }*/
+
+/*    .side-nav-menu .nav-menu {*/
+/*        padding-top: 200px !important;*/
+/*    }*/
+/*}*/
+
+/*!* (1600x900) HD+ Display *!*/
+/*@media  screen and (max-width: 1600px) {*/
+
+/*    .rites-res {*/
+/*        margin-top: 120px;*/
+/*    }*/
+/*}*/
+
+/* !*Extra large devices (large desktops, 1200px and up)*!*/
+/*@media (min-width: 1200px) {*/
+
+/*    .side-nav-menu .slider-social {*/
+/*        bottom: 70px !important;*/
+/*    }*/
+
+/*    .rites-res {*/
+/*        margin-top: 47px !important;*/
+/*    }*/
+
+/*    .side-nav-menu .nav-menu {*/
+/*        padding-top: 100px;*/
+/*    }*/
+
+/*}*/
+
+/*100*/
+@media (min-width: 1200px) and (max-width: 1599px){
+    .rites-res {
+        margin-top: 50px !important;
+        width: 73%;
+        margin-left: 30px;
+        color: #495057;
+        font-size: 12px;
+    }
+    .side-nav-menu .slider-social {
+        right: auto;
+        bottom: 59px !important;
+    }
+
+
+}
+
+/*75*/
+@media  (min-width: 1300px) {
+
+    .rites-res {
+        margin-top: 118px !important;
+    }
+}
+
+/*90*/
+@media (min-width: 1600px){
+
+    .rites-res {
+        margin-top: 200px !important;
+        width: 73%;
+        margin-left: 30px;
+        color: #495057;
+        font-size: 12px;
+    }
+    .side-nav-menu .slider-social {
+        right: auto;
+        bottom: 59px !important;
+    }
+}
+
+/*80 BELOW*/
+@media screen and (min-width: 1900px){
+        .side-nav-menu .slider-social {
+            bottom: 90px !important;
+        }
+
+        .rites-res {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .side-nav-menu .nav-menu {
+            padding-top: 200px !important;
+        }
+}
+
+/* ===================================
+    Cube Portfolio
+====================================== */
+
+.portfolio-sec img{
+    width: 100% !important;
+}
+.portfolio-sec .image-area:hover>img{
+    transform: scale(1.1);
+}
+.portfolio-sec .image-area{
+    overflow: hidden;
+}
+.hovereffect {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hovereffect:hover .overlay-hover{
+    opacity: 1;
+    animation: .5s zoomIn;
+}
+
+.overlay-detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.overlay-detail i{
+    font-size: 76px;
+}
+
+.overlay-hover{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #03a9f5a1;
+    transition: .5s ease;
+    opacity: 0;
+    z-index: 111;
+}
+
+
+
+.compensate-for-scrollbar {
+    margin-right: 0px !important;
+}

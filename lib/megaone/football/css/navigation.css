@@ -1,0 +1,67 @@
+.football.tp-bullets{
+    height: 110px !important;
+    width: 19px !important;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.football .tp-bullet{
+    position:relative;
+    display: contents;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.single-slide .football .tp-bullet{
+    display: none !important;
+}
+
+.football .tp-bullet .tp-bullet-inner{
+    width: 13px;
+    height: 13px;
+    position:relative;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.dark-slider .football .tp-bullet .tp-bullet-inner{
+    border: 3px solid #4d4d4d;
+}
+
+
+.football .tp-bullet.selected .tp-bullet-inner{
+    transform: scale(1.4);
+    margin-top:2px;
+    background: #067AC0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.dark-slider .football .tp-bullet.selected .tp-bullet-inner{
+    background: transparent;
+}
+
+.football .tp-bullet:not(:last-child) .tp-line{
+    height: 20px;
+    width: 3px;
+    background: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.dark-slider .football .tp-bullet:not(:last-child) .tp-line{
+    background: #4d4d4d;
+}
+

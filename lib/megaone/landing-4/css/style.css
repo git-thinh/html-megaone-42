@@ -1,0 +1,248 @@
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+canvas{
+    margin: 0;
+    padding: 0;
+    display: block;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.logo_img img{
+    width: 20%;
+}
+
+.bg-img{
+    background: url(../img/bg-img.png);
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.sub_text{
+    font-size: 20px;
+    font-family: 'OpenSans' , sans-serif;
+    color: rgba(0, 25, 41, 0.6);
+    line-height: 1.5;
+    margin: 40px auto 50px auto;
+}
+
+.alignment_text{
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.text1 {
+    position: absolute;
+    top: 28%;
+    right: 100px;
+    text-align: right;
+}
+
+/*************NOTIFY ME BUTTON AND FIELD*************/
+.btn {
+    padding: 8px 35px 8px 35px;
+    font-size: 16px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 100px !important;
+    text-align: center;
+    text-decoration: none;
+    z-index: 99;
+    border: 0 solid transparent;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    background-size: 200% auto;
+
+}
+
+.btn:hover{
+    color: #ffffff !important;
+    background-color: #cb418d;
+}
+
+.input-group-append {
+    margin-left: -50px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.input-group>.form-control:focus {
+    z-index: 1;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.display-error{
+    margin-bottom: 10px;
+}
+
+/**********************SOCIAL ICONS********************/
+ul.icons li {
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 5px;
+    z-index: 99999;
+}
+
+ul.icons li i.fa-facebook-f{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #3B5998;
+    border-radius: 50px;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    padding-top: 10px;
+}
+
+ul.icons li i.fa-facebook-f:hover{
+    color: #ffffff;
+    background-color: #3B5998 ;
+}
+
+ul.icons li i.fa-twitter{
+    width: 40px;
+    height: 40px;
+    color: #00acee;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    padding-top: 10px;
+}
+
+ul.icons li i.fa-twitter:hover{
+    color: #ffffff;
+    background-color: #00acee ;
+}
+
+ul.icons li i.fa-linkedin-in{
+    color: #0e76a8;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    padding-top: 10px;
+}
+
+ul.icons li i.fa-linkedin-in:hover{
+    color: #ffffff;
+    background-color: #0e76a8 ;
+}
+
+ul.icons li i.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-transition: 0.8s ease !important;
+    -o-transition: 0.8s ease !important;
+    transition: 0.8s ease !important;
+    padding-top: 10px;
+}
+
+ul.icons li i.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: white;
+}
+
+/****************MEDIA QUERIES***************/
+
+@media screen and (width:1024px) {
+    .text {
+        top: 30%;
+    }
+
+    .text1 {
+        top: 32%;
+    }
+}
+
+@media screen and (width:768px){
+    .text1{
+        right: 45px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .btn {
+        padding: 8px 28px 8px 28px;
+    }
+    .sub_text {
+        font-size: 17px;
+    }
+    .alignment_text{
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul.icons li {
+        display: inline-block;
+        padding-left: 4px;
+    }
+    .text1{
+        top: 70%;
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    .logo img{
+        width: 65%;
+    }
+}

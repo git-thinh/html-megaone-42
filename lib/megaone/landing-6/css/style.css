@@ -1,0 +1,258 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+
+#carousal_images .img-area img{
+    height: 100vh !important;
+}
+
+#carousal_images{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.overlay-content{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin: auto;
+    z-index: 99;
+}
+
+.overlay-content1{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    margin: auto;
+    z-index: 99;
+}
+
+
+.font_size{
+    font-size: 20px;
+    font-family: 'Raleway' , sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.img-logo img{
+    width: 17%;
+}
+.img-logo{
+    margin-bottom: 10%;
+}
+
+/***************************COUNT DOWN***************/
+
+div.count_down .counters {
+    display: inline-block;
+    color: white;
+    padding: 0 0 0 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+div.count_down .counters p:nth-child(2) {
+    font-size: 73px;
+    font-family: 'OpenSans' , sans-serif;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+div.count_down .counters p:nth-child(1) {
+    font-size: 18px;
+    font-family: 'OpenSans' , sans-serif;
+    letter-spacing: 0;
+    margin:0;
+}
+
+.hours, .minutes{
+    font-size: 40px !important;
+}
+
+.seconds{
+    font-size: 37px !important;
+}
+
+.my-counters .count_down .counters:last-child p:first-child{
+    margin-top: auto;
+    margin-left: 10px;
+}
+
+.my-counters .count_down .child_counters .counters:last-child{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.my-counters .count_down .counters{
+    text-align: left !important;
+}
+
+
+/****************SOCIAL ICONS***************/
+
+.my-counters .social-icons ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.my-counters .social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.my-counters .social-icons ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.my-counters .social-icons ul li a i{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.my-counters .social-icons ul li a i.fa-facebook-f:hover{
+    background-color: #3B5998;
+}
+
+.my-counters .social-icons ul li a i.fa-twitter:hover{
+    background-color: #00acee;
+}
+
+.my-counters .social-icons ul li a i.fa-linkedin-in:hover{
+    background-color: #0e76a8;
+}
+
+.my-counters .social-icons ul li a i.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/***************CAROUSAL IMAGES AND FADE EFFECT*********/
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+    background: url('../img/carousal1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item:nth-child(2) {
+    background: url('../img/carousal2.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item:nth-child(3) {
+    background: url('../img/carousal3.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/***********************MEDIA QUERIES**************/
+
+@media screen and (width:768px){
+    .img-logo{
+        margin-bottom: 20%;
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width:767px) {
+    .img-logo {
+        margin-bottom: 30%;
+    }
+
+    .font_size {
+        font-size: 17px;
+    }
+
+    .img-logo img {
+        width: 50%;
+    }
+
+    .my-counters .social-icons ul li a i {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        padding-top: 6px;
+    }
+
+    .hours, .minutes{
+        font-size: 36px !important;
+    }
+
+    .seconds{
+        font-size: 33px !important;
+    }
+
+    div.count_down .counters p:nth-child(2) {
+        font-size: 55px;
+        margin: 20px 0 0 0;
+    }
+
+    div.count_down .counters p:nth-child(1) {
+        font-size: 14px;
+    }
+}

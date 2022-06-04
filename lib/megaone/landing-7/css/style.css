@@ -1,0 +1,280 @@
+/* ===================================
+                About
+   =================================== */
+
+/*
+    Theme Name: MegaOne
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page , Multi Parallax Template
+    Tags: one page, multi page, multipurpose, parallax, creative, html5
+
+ */
+
+/* ===================================
+          Table of Contents
+   =================================== */
+
+/*
+01 body
+02 Page Loader
+03 Coming Soon
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body {
+    font-size: 15px;
+    color: #535353;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    direction: ltr;
+    line-height: 1.5;
+}
+
+
+/* ---- PreLoader ---- */
+
+
+.loader {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+.loader-spinner {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    background: transparent;
+    border-top: 4px solid #CF6C29;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    -webkit-animation: 1s spin linear infinite;
+    animation: 1s spin linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*counter container*/
+
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#particles-js .position-top{
+    position: sticky;
+    z-index: 1;
+}
+#particles-js canvas{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+#particles-js img{
+    user-select: none;
+}
+
+.row-bg{
+    background-color: #76bd43;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 20px -5px #000000a8;
+    overflow: hidden;
+    padding: 0 10px;
+}
+/* ----- coming soon ----- */
+
+.count_down p {
+    color: #232323;
+}
+
+.count_down.animated-gradient p {
+    color: #fde428;
+}
+
+.count_down.white p {
+    color: #ffffff;
+}
+
+ul.count_down {
+    list-style: none;
+    margin: 0 0 0;
+    padding: 0;
+    display: block;
+}
+
+ul.count_down li {
+    display: inline-block;
+    padding: 0 20px;
+    width: auto;
+}
+
+ul.count_down li:first-child{
+    padding-left: 0;
+}
+ul.count_down li:last-child{
+    padding-right: 0;
+}
+
+ul.count_down li p:nth-child(1) {
+    font-size: 3rem;
+    color: inherit;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    transition: 1s;
+}
+
+ul.count_down li p:nth-child(2) {
+    color: inherit;
+    font-size: 1rem;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    transition: 1s;
+    font-weight: 500;
+}
+
+ul.count_down.white li p:nth-child(2) {
+    color: #ffffff;
+}
+.count-down-form{
+    width: 80%;
+    margin-top: 30px;
+    display: inline-block;
+}
+.count-down-form form {
+    margin: 0 auto;
+    position: relative;
+}
+
+.count-down-form form .form-placeholder {
+    border-radius: 40px;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 26px;
+    margin-bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    color: inherit;
+    text-align: left;
+}
+
+.count-down-form form .email-placeholder {
+    background: transparent;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    display: flex;
+}
+.index-3-bg .count-down-form form .email-placeholder {
+    border: 1px solid #ffffff;
+}
+.index-3-bg .form-placeholder::placeholder{
+    color: #fff;
+}
+.form-placeholder::placeholder{
+    color: #fff;
+}
+
+.count-down-form form .button {
+    transition: all linear 300ms;
+    margin: 5px 5px 5px 2px;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    padding: .8rem 2.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    z-index: 1;
+    border: 1px solid transparent;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+.btn-orange{
+    background: #ce6d29 !important;
+    color: #fff !important;
+}
+.btn-orange:hover{
+    background: #ab5920 !important;
+    color: #fff !important;
+}
+
+
+
+@media (max-width: 991px) {
+    ul.count_down li p:nth-child(1) {
+        font-size: 2.25rem !important;
+    }
+    ul.count_down li p:nth-child(2) {
+        font-size: 0.85rem !important;
+    }
+    .right-panel{
+        position: absolute;
+        z-index: 1;
+    }
+    .left-panel{
+        opacity: 0.2;
+        text-align: center;
+    }
+    .left-panel img{
+        max-width: 400px;
+    }
+    .row-bg{
+        padding: 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .count-down-form{
+        width: 100%;
+    }
+
+}
+
+/* ---- Loader ends ---- */
+
+

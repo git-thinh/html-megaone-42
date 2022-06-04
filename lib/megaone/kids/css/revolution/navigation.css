@@ -1,0 +1,102 @@
+.surfing.tp-bullets{
+    height: 110px !important;
+    width: 19px !important;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.surfing .tp-bullet{
+    position:relative;
+    display: contents;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.single-slide .surfing .tp-bullet{
+    display: none !important;
+}
+
+.surfing .tp-bullet .tp-bullet-inner{
+    width: 13px;
+    height: 13px;
+    position:relative;
+    border: 3px solid #c7d911;
+    border-radius: 50%;
+    background: #c7d911;
+    cursor: pointer;
+    box-sizing: content-box;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.dark-slider .surfing .tp-bullet .tp-bullet-inner{
+    border: 3px solid #c7d911;
+}
+
+
+.surfing .tp-bullet.selected .tp-bullet-inner{
+    transform: scale(1.4);
+    margin-top:2px;
+    background: #ffb902;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border: 3px solid #ffb902;
+}
+
+.dark-slider .surfing .tp-bullet.selected .tp-bullet-inner{
+    background: transparent;
+}
+
+.surfing .tp-bullet:not(:last-child) .tp-line{
+    height: 20px;
+    width: 3px;
+    background: #f6f6f6;
+    display: block;
+    margin: 0 auto;
+}
+
+.dark-slider .surfing .tp-bullet:not(:last-child) .tp-line{
+    background: #f6f6f6;
+}
+
+
+
+
+
+/*SLIDER SOCIAL ICONS*/
+
+.revicon {
+    top: 51%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 34px;
+    z-index: 11;
+    position: absolute;
+}
+
+.revicon li{
+    margin-bottom: 5px;
+}
+.revicon li:last-child{
+    margin-bottom: 0;
+}
+
+
+
+.revicon li a{
+    color: #606060 !important;
+}
+
+.revicon li a i{
+    font-size: 16px;
+}

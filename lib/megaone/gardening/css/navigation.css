@@ -1,0 +1,47 @@
+.gardening.tp-bullets{
+    height: 110px !important;
+    width: 19px !important;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.gardening .tp-bullet{
+    position:relative;
+    display: contents;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.single-slide .gardening .tp-bullet{
+    display: none !important;
+}
+
+.gardening .tp-bullet .tp-bullet-inner{
+    width: 13px;
+    height: 13px;
+    margin: 10px 0;
+    position:relative;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background: rgba(229,229,229,1);
+}
+
+.gardening .tp-bullet.selected .tp-bullet-inner{
+    background: #33c9dd;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.dark-slider .gardening .tp-bullet.selected .tp-bullet-inner{
+    background: transparent;
+}

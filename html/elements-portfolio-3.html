@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="Themes Industry">
+    <!-- Description -->
+    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with ready home page demos.">
+    <!-- Page Title -->
+    <title>Portfolio 3 | MegaOne HTML5 Template</title>
+    <!-- Favicon -->
+    <link href="/lib/megaone/vendor/img/favicon.ico" rel="icon">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="/lib/megaone/vendor/css/bundle.min.css">
+    <link href="/lib/megaone/vendor/css/LineIcons.min.css" rel="stylesheet">
+    <link href="/lib/megaone/vendor/css/line-awesome.min.css" rel="stylesheet">
+    <link href="/lib/megaone/vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link href="/lib/megaone/vendor/css/elements.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Start ui-block-03 -->
+<section class="portfolio ui-block-03" id="portfolio-area">
+    <div id="project-sec" class="project-sec">
+        <div class="projects owl-carousel owl-theme no-gutters">
+            <!-- Item-1 -->
+            <div class="item project-area">
+                <div class="project-img order-1">
+                    <img src="/lib/megaone/vendor/img/elements-img/portfolio-img/portfolio-img-3/ui-block-01-portfolio-1.jpg" alt="images">
+                </div>
+                <div class="container">
+                    <div class="project-detail text-center text-lg-left order-2">
+                        <div class="row no-gutters">
+                            <div class="col-10 offset-1 offset-lg-0  col-lg-4 animate-fade">
+                                <h6 class="project-heading">Sample Portfolio</h6>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere nisi est, sed ullamcorper nibh volutpat at. In rutrum,tellus lacus faucibus lectus, sed cursus eros ligula non odio.</p>
+                                <a href="#." class="btn btn-medium btn-rounded btn-trans-white scroll">Start Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item-2 -->
+            <div class="item project-area">
+                <div class="project-img order-1">
+                    <img src="/lib/megaone/vendor/img/elements-img/portfolio-img/portfolio-img-3/ui-block-01-portfolio-2.jpg" alt="images">
+                </div>
+                <div class="container">
+                    <div class="project-detail text-center text-lg-left order-2">
+                        <div class="row no-gutters">
+                            <div class="col-10 offset-1 offset-lg-0  col-lg-4 animate-fade">
+                                <h6 class="project-heading">Sample Portfolio</h6>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere nisi est, sed ullamcorper nibh volutpat at. In rutrum,tellus lacus faucibus lectus, sed cursus eros ligula non odio.</p>
+                                <a href="#." class="btn btn-medium btn-rounded btn-trans-white scroll">Start Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item-3 -->
+            <div class="item project-area">
+                <div class="project-img order-1">
+                    <img src="/lib/megaone/vendor/img/elements-img/portfolio-img/portfolio-img-3/ui-block-01-portfolio-3.jpg" alt="images">
+                </div>
+                <div class="container">
+                    <div class="project-detail text-center text-lg-left order-2">
+                        <div class="row no-gutters">
+                            <div class="col-10 offset-1 offset-lg-0  col-lg-4 animate-fade">
+                                <h6 class="project-heading">Sample Portfolio</h6>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere nisi est, sed ullamcorper nibh volutpat at. In rutrum,tellus lacus faucibus lectus, sed cursus eros ligula non odio.</p>
+                                <a href="#." class="btn btn-medium btn-rounded btn-trans-white scroll">Start Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav -->
+        <div class="project-links-left d-none d-md-block">
+            <a class="customPrevBtn"><i class="las la-angle-left"></i></a>
+        </div>
+        <div class="project-links-right d-none d-md-block">
+            <a class="customNextBtn"><i class="las la-angle-right"></i></a>
+        </div>
+    </div>
+</section>
+<!-- End ui-block-03 -->
+
+<!-- Js Files -->
+<script src="/lib/megaone/vendor/js/bundle.min.js"></script>
+<script src="/lib/megaone/vendor/js/wow.min.js"></script>
+<script src="/lib/megaone/vendor/js/jquery.appear.js"></script>
+<script src="/lib/megaone/vendor/js/owl.carousel.min.js"></script>
+
+<script>
+    $('.projects').owlCarousel({
+
+        loop:true,
+        margin:0,
+        slideSpeed: 5000,
+        slideTransition:'linear',
+        animateOut: 'slideOutRight',
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                autoplay:true,
+                autoplayTimeout:8000,
+                autoplayHoverPause:true,
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            },
+        }
+    });
+    $('.customNextBtn').click(function() {
+        var owl = $('.projects');
+        owl.owlCarousel();
+        owl.trigger('next.owl.carousel');
+    });
+    $('.customPrevBtn').click(function() {
+        var owl = $('.projects');
+        owl.owlCarousel();
+        owl.trigger('prev.owl.carousel', [300]);
+    });
+
+    if ($(window).width() > 991) {
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: false,
+            live: true
+        });
+        new WOW().init();
+    }
+</script>
+
+</body>
+</html>

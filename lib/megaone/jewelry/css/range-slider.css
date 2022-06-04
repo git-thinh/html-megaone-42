@@ -1,0 +1,29 @@
+.noUi-horizontal {
+    height: 5px;
+    margin: 28px 0 25px 0;
+}
+.noUi-connect {
+    background-color: #222;
+}
+.noUi-connects {
+    margin-top: -1px;
+    height: 4px;
+}
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: -8px;
+    background-color: #222;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none;
+}
+
+.noUi-handle {
+    box-shadow: none;
+}
+.price-num{
+    margin-bottom: 0;
+}

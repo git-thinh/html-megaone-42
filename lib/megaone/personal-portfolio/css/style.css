@@ -1,0 +1,135 @@
+/* ===================================
+    About
+====================================== */
+
+/*
+    Theme Name: MegaOne
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page Parallax Template
+    Tags: one page, multipurpose, parallax, creative, html5
+*/
+
+/* ===================================
+    Table of Content
+====================================== */
+
+/*  - Fonts
+    - General
+    - Social Icon Hover
+    - Header And Navigation
+    - Slider
+    - About
+    - Work
+    - Clients
+    - Price
+    - Blog
+    - Contact
+    - Footer
+    - Loader
+    - Media Queries   */
+
+/* ===================================
+    Google fonts
+====================================== */
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,700&display=swap');
+
+.font-primary {
+    font-family: 'Dosis', sans-serif;
+}
+.font-secondary {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ===================================
+    General
+====================================== */
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* center block */
+.center-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* ===================================
+   Loader
+====================================== */
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 111111;
+    background: #fff;
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-container {
+    width: 100px;
+    height: 100px;
+}
+.loader-block {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background: #f1c30f;
+}
+.loader-block:nth-child(4n+1) { animation: wave 1.5s ease .0s infinite; }
+.loader-block:nth-child(4n+2) { animation: wave 1.5s ease .2s infinite; }
+.loader-block:nth-child(4n+3) { animation: wave 1.5s ease .4s infinite; }
+.loader-block:nth-child(4n+4) { animation: wave 1.5s ease .6s infinite; margin-right: 0; }
+
+@keyframes wave {
+    0%   { top: 0;     opacity: 1; }
+    50%  { top: 30px;  opacity: .2; }
+    100% { top: 0;     opacity: 1; }
+}
+
+@media screen and (max-width: 575px) {
+
+}

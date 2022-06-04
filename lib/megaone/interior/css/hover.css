@@ -1,0 +1,328 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/* ===================================
+                About
+   =================================== */
+
+/*
+    Theme Name: Interior
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page , Multi Parallax Template
+    Tags: One page, multi page, multipurpose, parallax, creative, html5
+
+ */
+
+/* ===================================
+          Table of Contents
+   =================================== */
+
+/*
+01 hovers
+
+/*Table Of Contents ends */
+
+
+/*Global Styling*/
+
+
+
+.sparkle {
+    color: #f1c30f;
+    margin: auto auto;
+}
+.sparkle:hover {
+    cursor: pointer;
+}
+
+.u-hover--sparkle {
+    box-sizing: border-box;
+    position: relative;
+    /*padding: 0.75em;*/
+}
+
+.u-hover--sparkle::before, .u-hover--sparkle::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+}
+.service-list .media:nth-child(even).u-hover--sparkle::before,.service-list .media:nth-child(even).u-hover--sparkle::after{
+    left:25px;
+}
+.u-hover--sparkle::before {
+    border-top: 0.1em solid #f1c30f;
+    border-bottom: 0.1em solid #f1c30f;
+    transform: scale3d(0, 1, 1);
+}
+.u-hover--sparkle::after {
+    border-left: 0.1em solid #f1c30f;
+    border-right: 0.1em solid #f1c30f;
+    transform: scale3d(1, 0, 1);
+}
+.u-hover--sparkle:hover::before, .u-hover--sparkle:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: transform 600ms;
+}
+
+/***********************/
+/******button hover*****/
+/***********************/
+
+.anim-btn {
+    /*--c: #ffffff;*/
+    /*color: var(--c);*/
+    border: 1px solid #f1c30f;
+    border-radius: 0.5em;
+    /*width: 12em;*/
+    /*height: 3em;*/
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    /*line-height: 3em;*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #f1c30f;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 10px 30px 10px 30px;
+    transition: .8s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.anim-btn:hover{
+    border:solid 1px #142022;
+}
+.anim-btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    /*background-color: var(--c);*/
+    background-color: #142022;
+    transform: translateY(150%);
+    border-radius: 50%;
+    /*left: calc((var(--n) - 1) * 25%);*/
+    transition: 0.5s;
+    /*transition-delay: calc((var(--n) - 1) * 0.1s);*/
+    z-index: -1;
+}
+
+.anim-btn:hover {
+    color: #FFFFFF;
+}
+
+.anim-btn:hover span {
+    transform: translateY(0) scale(3);
+}
+
+.anim-btn span:nth-child(1) {
+    left: calc((1 - 1) * 25%);
+    transition-delay: calc((1 - 1) * 0.1s);
+}
+
+.anim-btn span:nth-child(2) {
+    left: calc((2 - 1) * 25%);
+    transition-delay: calc((2 - 1) * 0.1s);
+}
+
+.anim-btn span:nth-child(3) {
+    left: calc((3 - 1) * 25%);
+    transition-delay: calc((3 - 1) * 0.1s);
+}
+
+.anim-btn span:nth-child(4) {
+    left: calc((4 - 1) * 25%);
+    transition-delay: calc((4 - 1) * 0.1s);
+}
+.anim-btn span:nth-child(5) {
+    left: calc((5 - 1) * 25%);
+    transition-delay: calc((5 - 1) * 0.1s);
+}
+
+/***********************/
+/******image hover*****/
+/***********************/
+
+.figure:hover img{
+    transform: scale(1.1);
+}
+.figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.figure:hover::before {
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 100%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 100%;
+    }
+}
+
+/***********************/
+/******icons hover *****/
+/***********************/
+
+.social-icons a{
+    display: inline-block;
+    text-decoration: none;
+    color: #142022;
+    margin-right: 10px;
+}
+.social-icons a i{
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    color: #142022;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 40px;
+    background: transparent;
+    -webkit-transition: all .3s ease !important; -o-transition: all .3s ease !important; transition: all .3s ease !important;
+}
+
+.social-icons a i.la-facebook-f:hover, .social-icons  a i.la-facebook-f:focus {
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 30px #3D558F inset;
+    box-shadow: 0 0 15px 30px #3D558F inset;
+}
+.social-icons a i.la-twitter:hover, .social-icons  a i.la-twitter:focus {
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 30px #33c9dd inset;
+    box-shadow: 0 0 15px 30px #33c9dd inset;
+}
+.social-icons a i.la-google:hover, .social-icons  a i.la-google:focus {
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 30px #D74937 inset;
+    box-shadow: 0 0 15px 30px #D74937 inset;
+}
+.social-icons a i.la-linkedin-in:hover, .social-icons  a i.la-linkedin-in:focus {
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 30px #0474BC inset;
+    box-shadow: 0 0 15px 30px #0474BC inset;
+}
+
+.social-icons a i.la-instagram:hover, .social-icons  a i.la-instagram:focus {
+    color: #ffffff;
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    /*-webkit-box-shadow: 0 0 15px 30px #fd5949 inset;*/
+    /*box-shadow: 0 0 15px 30px #fd5949 inset;*/
+    animation: 1s instaRound;
+       }
+@keyframes instaRound {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.social-icons a i.la-envelope:hover, .social-icons  a i.la-envelope:focus {
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 30px #D45049 inset;
+    box-shadow: 0 0 15px 30px #D45049 inset;
+}
+.social-icons a i:hover {
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+@-webkit-keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
+}
+
+
+
+
+
+/*tabs hover*/
+
+
+
+.pinkBg {
+    background-color: #f1c30f!important;
+    background-image: linear-gradient(90deg, #f1c30f, #f1b816);
+}
+.intro-banner-vdo-play-btn{
+    height:60px;
+    width:60px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    margin:-30px 0 0 -30px;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn .ripple{
+    position:absolute;
+    width:160px;
+    height:160px;
+    z-index:-1;
+    left:50%;
+    top:50%;
+    opacity:0;
+    margin:-80px 0 0 -80px;
+    border-radius:100px;
+    -webkit-animation:ripple 1.8s infinite;
+    animation:ripple 1.8s infinite
+}
+
+

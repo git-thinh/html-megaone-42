@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:300|Raleway:200,600,700&display=swap');
+
+
+.hesperiden .tp-tab{opacity:1; padding:10px; box-sizing:border-box; font-family:"Roboto",sans-serif; border-right:1px solid rgba(180, 180, 180, 0.49)
+}  .hesperiden .tp-tab-image{width:60px; height:60px; max-height:100%; max-width:100%; position:relative; display:inline-block; float:left}  .hesperiden .tp-tab-content{background:rgba(0,0,0,0);   position:relative;  padding:15px 15px 15px 85px; left:0; overflow:hidden; margin-top:-15px;  box-sizing:border-box;  color:rgba(51,51,51,1);  display:inline-block;  width:100%;  height:100%; position:absolute;}  .hesperiden .tp-tab-date{display:block; color:rgba(51,51,51,0.5); font-weight:500; font-size:12px; margin-bottom:0px}  .hesperiden .tp-tab-title{display:block;  text-align:left;  color:rgba(0,0,0,1);  font-size:14px;  font-weight:500;  text-transform:none;  line-height:17px}
+.hesperiden .tp-tab:hover,.hesperiden .tp-tab.selected{background:rgba(238,238,238,1)}
+.hesperiden .tp-tab-mask{}
+@media only screen and (max-width:960px){}
+
+
+.hesperiden .tp-tab:last-child{
+    border-right:none;
+    /*border-bottom: 0px solid rgba(#border-color#) !important;*/
+}
+.hesperiden .tp-tab.selected .tp-tab-content .tp-tab-date{
+    color: #f1c30f !important;
+}
+.hesperiden .tp-tab.selected .tp-bullet-number{
+    background-color: #f1c30f;
+}
+.hesperiden .tp-tab:hover,
+.hesperiden .tp-tab.selected{
+    background: rgba(238, 238, 238, 0) !important;
+}
+.hesperiden .tp-tab-content{
+    background: rgba(0,0,0,0) !important;
+    color: rgba(51, 51, 51, 1) !important;
+}
+.hesperiden .tp-tab-title{
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 24px !important;
+}
+
+/*custom*/
+
+.hesperiden .tp-tab-content {
+    padding: 32px 40px 15px 80px;
+    /*display: none;*/
+}
+.hesperiden .tp-bullet-number {
+    height: 30px;
+    width: 30px;
+    margin-top: 1.2rem;
+    margin-left: 20px;
+    background-image: none !important;
+    background-color: rgba(187, 187, 187, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s ease;
+}
+.hesperiden .tp-tab:hover .tp-bullet-number {
+   background-color: #f1c30f;
+    margin-top: .9rem;
+}
+.hesperiden .tp-bullet-number {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.hesperiden .tp-tab-title {
+    font-family:'Open Sans', sans-serif;
+    font-size: 13px !important;
+    font-weight: 400;
+}
+.hesperiden .tp-tab-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
+    transition: .8s ease;
+}
+.tp-tabs, .tp-thumbs, .tp-bullets {
+    padding-bottom: 8px;
+}
+.rev-btn:hover{
+    border: solid 1px #FFFFFF;
+}
+@media only screen and (max-width: 767.98px) {
+    .hesperiden .tp-tab-content {
+        padding: 30px 36px 15px 60px;
+        display: none;
+    }
+}
